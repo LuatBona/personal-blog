@@ -1,0 +1,378 @@
+*{ 
+
+
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+
+body{ 
+
+    height: 100vh;
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: 10% 85% 5% ;
+}
+
+header { 
+
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
+}
+.Luatbona { 
+
+    transform: translatex(20vh);
+    font-size: 1rem;
+
+}
+header a { 
+
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+
+}
+.links {
+
+    display: flex;
+    gap: 40px;
+    position: absolute;
+    right: 50vh;
+    top: 30px;
+
+}
+.links li { 
+
+    list-style: none;
+    font-weight: bold;
+
+}
+.links li a:hover, .links li a:active{ 
+
+    color:  rgba(0, 140, 255, 0.603) ;
+
+}
+.main-text{ 
+
+    font-size: 1rem;
+    max-width: 70vh;
+}
+main{ 
+
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    padding: 60px ;
+
+
+}
+main div:not(main > div > div){ 
+
+    height: 90vh;
+    border-radius: 10px;
+background-color: rgb(172, 179, 190);
+    transform:
+    
+    scale(0.9,0.9)
+    translateY(-12vh)
+    ;
+
+} 
+
+main > div > div button { 
+
+    transform: 
+    translateY(1vh)
+    translateX(13vw)
+    ;
+} 
+#title { 
+
+    transform: translateY(15vh);
+}
+.blog-post-info{ 
+
+    background-color: transparent;
+    display: flex ;
+    flex-direction: column;
+    justify-content: center;
+}
+.blog-post-info p { 
+
+    width:40vw;
+}
+.blog-post-info div {
+
+    transform: translateY(25vh);
+}
+.background { 
+
+    background-color: black;
+    width: fit-content;
+    border-radius: 40px;
+}
+.blog-post-info img{ 
+
+    transform:
+    
+    scale(0.7,0.7)
+    translateY(3vh)
+    ;
+        z-index: -5;
+
+
+}
+.blog-post-info h1,h2,h3,p{ 
+
+    margin: 10px 0px;
+}
+.img { 
+
+    transform:
+    
+    scale(0.7,0.7)
+    translateY(-12vh)
+    ;
+        z-index: -5;
+}
+main div button{ 
+
+    width: 20%;
+    transform:  
+    translatey(5vh)
+    translateX(200%)
+    ;
+    padding: 10px;
+    border-radius: 5px;
+    border-width: 0px;
+
+
+}
+button:hover{ 
+
+    color: white;
+    background-color: rgba(0, 140, 255, 0.603);
+    cursor: pointer;
+}
+.texts-container{ 
+
+    display: flex;
+    flex-direction: column;
+    transform: translateY(-23vh);
+
+}
+
+footer  { 
+
+    background-color: rgba(180, 166, 166, 0.274);
+    display: flex;
+    padding: 10px 0px;
+    align-items: center;
+    justify-content: center;
+
+}
+.current::after{ 
+
+    content: '';
+    display: block;
+    width: 100%;
+    border-radius: 15px;
+    height: 3px;
+    background-color:rgba(0, 140, 255, 0.603) ;
+}
+
+.menu{ 
+
+    display: none;
+}
+@media screen and (max-width:500px) {
+
+
+
+    body{ 
+
+        height: 100vh;
+        overflow: hidden;
+        display: grid;
+        grid-template-rows: 10vh 97vh 5vh ;
+    }   
+
+
+    main div { 
+
+        width: 50vh;
+        transform: 
+        translateX(-3vw)
+        scale(0.9,0.9)
+        translateY(-5vh)
+
+        ;
+    }
+    main div button{ 
+
+        width: 13vh;
+
+    }
+    .texts-container{ 
+
+        transform: 
+        translateY(1vh)
+        
+        ;
+    }
+    .texts-container button { 
+
+        transform: 
+        translateX(40vw)
+        translateY(2vh)
+        ;
+    }
+    .img{ 
+
+        width: 50vh;
+
+        transform: 
+        
+        translateX(-8vw)
+
+
+        ;
+    }
+    .Luatbona { 
+
+        transform: translatex(10vh);
+        z-index: 8;
+        width: 45vw;
+        font-size: 1rem;
+    
+    }
+
+    .menu{ 
+
+        overflow: hidden;
+        display: block;
+        z-index: 99;
+        transform: 
+        translateY(20vh) 
+        translatex(-15vw)
+        ;
+
+    }
+    .theMemu{ 
+
+        list-style: none;
+        width: 50vw;
+        height: 40vh;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 20px;
+        transform: 
+        translateX(120vw)
+        translateY(20px) 
+        ;
+
+        background-color: rgba(180, 180, 180, 0.966);
+        transition: all ease-in-out 500ms;
+    }
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+#menu-btn { 
+
+    background-color: transparent;
+    border-style: none;
+    transform: translateX(30vw);
+    
+}
+
+
+
+.links{ 
+
+    display: none;
+}
+
+
+.show-menu{ 
+
+    transform: translateX(0vw);
+}
+
+footer { 
+
+    transform: translateY(28vh);
+    width: 100%;
+}
+ 
+}
+@media (min-width:768px) and (max-width:1023px) {
+
+    body{ 
+
+        width: 100vw;
+    }
+
+    ul { 
+
+        transform: 
+        translateX(60vw)
+        translateY(2vh)
+        ;
+
+    }
+    .blog-post-info-links{
+
+        
+        transform: 
+        translateX(40vw)
+        translateY(2vh)
+        ;
+    }
+    .texts-container{ 
+
+        transform: 
+        translateY(1vh)
+  translateX(0vw)
+        
+        ;
+    }
+    .texts-container button { 
+
+        transform: 
+        translateX(30vw)
+        translateY(2vh)
+        ;
+    }
+    .blog-post-info p { 
+
+        width: 100vw;
+    }
+    .blog-post-info{
+
+        transform: translateX(-10vw)
+        
+        ;
+    }
+    .Luatbona { 
+
+        transform: translatex(10vh);
+        z-index: 8;
+        width: 45vw;
+        font-size: 1rem;
+    
+    }
+
+}
